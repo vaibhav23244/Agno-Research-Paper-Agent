@@ -27,7 +27,7 @@ agent_knowledge = PDFKnowledgeBase(
 
 agent_with_knowledge = Agent(
     name="Agent with Knowledge",
-    model=Groq(id="deepseek-r1-distill-llama-70b"),
+    model=Groq(id="meta-llama/llama-4-scout-17b-16e-instruct"),
     knowledge=agent_knowledge,
     tools = [ArxivTools()],
    description = dedent("""\
@@ -100,4 +100,4 @@ if __name__ == "__main__":
     load_knowledge = False
     if load_knowledge:
         agent_knowledge.load()
-    agent_with_knowledge.print_response("What is Semantic segmentation?", stream=True)
+    agent_with_knowledge.print_response("What is Hierarchical Transformer Encoder?", stream=True)
