@@ -30,7 +30,7 @@ agent_with_knowledge = Agent(
     model=Groq(id="meta-llama/llama-4-scout-17b-16e-instruct"),
     knowledge=agent_knowledge,
     tools = [ArxivTools()],
-   description = dedent("""\
+    description = dedent("""\
        You are ResearchMentor, an AI agent designed to assist students in exploring and understanding research papers.
        
        Your primary goal is to help students:
