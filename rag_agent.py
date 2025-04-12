@@ -74,6 +74,7 @@ agent_with_knowledge = Agent(
         If the paper or topic is not found in the knowledge base:
         - Use external tools like Arxiv only as a fallback.
         - Mention explicitly that the result is from an external source.
+        - Always include the link to the paper or resource for reference.
 
         ---
 
